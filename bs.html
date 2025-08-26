@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <section class="text-center bg-dark text-white d-flex align-items-center justify-content-center 100vh"
+        style="background-image: url('img/bg.png'); background-size: cover; background-position: center;">
+        <div>
+            <h1>Заголовок</h1>
+            <p>Какой-то текст</p>
+        </div>
+    </section>
+    <section class="py-5">
+        <!-- py-5 — это Bootstrap класс для вертикальных отступов сверху и снизу (padding-y: 3rem, примерно 50px) -->
+        <div class="container">
+            <!-- container — стандартный Bootstrap контейнер, центрирует контент и задаёт максимальную ширину (по умолчанию max-width 1140px) -->
+            <h2 class="text-center mb-5">
+                Skills
+            </h2>
+            <!-- text-center — выравнивает заголовок по центру -->
+            <!-- mb-5 — нижний margin (Bootstrap spacing) для отступа от контента ниже -->
+
+            <div class="row g-4">
+                <!-- row — создает горизонтальный ряд колонок Bootstrap -->
+                <!-- g-4 — gap между колонками и рядами (высота и ширина) -->
+
+                <!-- Левая колонка: Speaking -->
+                <div class="col-lg-6 d-flex flex-column">
+                    <!-- col-lg-6 — на больших экранах (lg ≥ 992px) колонка занимает 6 из 12 частей ширины, то есть половину -->
+                    <!-- d-flex flex-column — используем flex для вертикального расположения элементов внутри колонки -->
+
+                    <div class="card h-100 p-3 mb-4 text-center" style="background-color: rgba(233, 224, 224, 0.892);">
+                        <!-- card — стандартная карточка Bootstrap, с тенями и рамкой -->
+                        <!-- h-100 — высота карточки будет растягиваться на всю высоту родителя, чтобы выравнивать с правой колонкой -->
+                        <!-- p-3 — внутренние отступы (padding) по 1rem -->
+                        <!-- mb-4 — нижний margin для отступа от следующего контента, если будет -->
+                        <!-- text-center — текст внутри карточки по центру -->
+
+                        <img src="https://morphismail.github.io/site_4_portfolio/img/Shared%20goals-bro%201.png"
+                            class="card-img-top mx-auto mb-3" style="max-width:300px;" alt="Speaking">
+                        <!-- card-img-top — стандартный класс для картинки сверху карточки -->
+                        <!-- mx-auto — центрирует картинку по горизонтали -->
+                        <!-- mb-3 — нижний отступ у картинки -->
+                        <!-- style max-width:150px — ограничиваем размер картинки -->
+
+                        <div class="card-body">
+                            <!-- card-body — стандартный блок для содержимого карточки -->
+                            <h5 class="card-title">Speaking</h5>
+                            <p class="card-text">
+                                Improve your English skills and confidence. Live classes and interactive lessons online.
+                                20% extra free for a limited time only
+                            </p>
+                            <a href="#" class="btn btn-dark">Learn more</a>
+                            <!-- btn btn-dark — стандартная кнопка Bootstrap, темная -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Правая колонка: Writing, Reading, Listening -->
+                <div class="col-lg-6 d-flex flex-column">
+                    <!-- col-lg-6 — правая половина экрана на больших устройствах -->
+                    <!-- d-flex flex-column — выстраиваем вложенные ряды вертикально -->
+
+                    <!-- Верхняя строка: Writing и Reading -->
+                    <div class="row g-4 mb-4">
+                        <!-- row внутри колонки, чтобы разделить на две карточки по горизонтали -->
+                        <!-- g-4 — промежутки между карточками -->
+                        <!-- mb-4 — нижний отступ до следующего ряда -->
+
+                        <div class="col-6">
+                            <!-- col-6 — на всех экранах занимает половину ширины родителя -->
+                            <div class="card h-100 p-3 text-center">
+                                <img src="https://morphismail.github.io/site_4_portfolio/img/Shared%20goals-bro%201.png"
+                                    class="card-img-top mx-auto mb-3" style="max-width:120px;" alt="Writing">
+                                <div class="card-body">
+                                    <h5 class="card-title">Writing</h5>
+                                    <p class="card-text">One of the most important and extensive areas of natural
+                                        science, the science that studies substances, also their composition</p>
+                                    <a href="#" class="btn btn-dark">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="card h-100 p-3 text-center">
+                                <img src="https://morphismail.github.io/site_4_portfolio/img/Shared%20goals-bro%201.png"
+                                    class="card-img-top mx-auto mb-3" style="max-width:120px;" alt="Reading">
+                                <div class="card-body">
+                                    <h5 class="card-title">Reading</h5>
+                                    <p class="card-text">Perception and response actions of the user resulting from the
+                                        use and/or upcoming use of the product, system or service</p>
+                                    <a href="#" class="btn btn-dark">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Нижняя строка: Listening -->
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <!-- col-12 — занимает всю ширину родителя -->
+                            <div class="card h-100 p-3 d-flex flex-row align-items-center">
+                                <!-- d-flex flex-row — карточка выстраивается горизонтально: картинка слева, текст справа -->
+                                <!-- align-items-center — вертикальное выравнивание элементов по центру -->
+
+                                <img src="https://morphismail.github.io/site_4_portfolio/img/Shared%20goals-bro%201.png"
+                                    class="me-3" style="max-width:120px;" alt="Listening">
+                                <!-- me-3 — отступ справа у картинки, чтобы текст не прилегал -->
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Listening</h5>
+                                    <p class="card-text">Here you can find activities to practise your listening skills.
+                                        Listening will help you to improve your understanding</p>
+                                    <a href="#" class="btn btn-dark">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
